@@ -1,8 +1,44 @@
 {
  "cells": [
   {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2020-05-10T08:31:57.184437Z",
+     "iopub.status.busy": "2020-05-10T08:31:57.183259Z",
+     "iopub.status.idle": "2020-05-10T08:31:57.186774Z",
+     "shell.execute_reply": "2020-05-10T08:31:57.186052Z"
+    },
+    "papermill": {
+     "duration": 0.020249,
+     "end_time": "2020-05-10T08:31:57.186903",
+     "exception": false,
+     "start_time": "2020-05-10T08:31:57.166654",
+     "status": "completed"
+    },
+    "tags": [
+     "injected-parameters"
+    ]
+   },
+   "outputs": [],
+   "source": [
+    "# Parameters\n",
+    "alpha = 2\n"
+   ]
+  },
+  {
    "cell_type": "markdown",
-   "metadata": {},
+   "metadata": {
+    "papermill": {
+     "duration": 0.002707,
+     "end_time": "2020-05-10T08:31:57.193128",
+     "exception": false,
+     "start_time": "2020-05-10T08:31:57.190421",
+     "status": "completed"
+    },
+    "tags": []
+   },
    "source": [
     "## Round 3- Q1\n",
     "\n",
@@ -51,69 +87,23 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": 6,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "def solution(arr):\n",
-    "    length=len(arr)\n",
-    "    passcodes=0\n",
-    "    for i in range(length):\n",
-    "        el1=arr[i]\n",
-    "        for j in range(i+1, length):\n",
-    "            el2=arr[j]\n",
-    "            if el2>el1:\n",
-    "                if el2%el1==0:\n",
-    "                    for k in range(j+1, length):\n",
-    "                        el3=arr[k]\n",
-    "                        if el3>el2:\n",
-    "                            if el3%el2==0:\n",
-    "                                passcodes=passcodes+1\n",
-    "            else:\n",
-    "                pass\n",
-    "    return(passcodes)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
    "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "## Dry run"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "[1, 2, 3, 4, 5, 6]\n",
-    "e1=1\n",
-    "    e2=2\n",
-    "        e3=4\n",
-    "        e3=6\n",
-    "    e2=3\n",
-    "        e3=6\n",
-    "    e2=4\n",
-    "    e2=5\n",
-    "    e2=6\n",
-    "e1=2\n",
-    "    e2=4\n",
-    "    e2=6\n",
-    "e1=3\n",
-    "    e2=6\n",
-    "e1=4\n",
-    "e1=5\n",
-    "e1=6"
-   ]
+   "metadata": {
+    "nteract": {
+     "transient": {
+      "deleting": false
+     }
+    },
+    "papermill": {
+     "duration": 0.002525,
+     "end_time": "2020-05-10T08:31:57.199211",
+     "exception": false,
+     "start_time": "2020-05-10T08:31:57.196686",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": []
   }
  ],
  "metadata": {
@@ -136,6 +126,19 @@
   },
   "nteract": {
    "version": "0.22.4"
+  },
+  "papermill": {
+   "duration": 0.982656,
+   "end_time": "2020-05-10T08:31:57.311191",
+   "environment_variables": {},
+   "exception": null,
+   "input_path": "Round 3- Q1.ipynb",
+   "output_path": "updatedQ4",
+   "parameters": {
+    "alpha": 2
+   },
+   "start_time": "2020-05-10T08:31:56.328535",
+   "version": "2.1.1"
   }
  },
  "nbformat": 4,
